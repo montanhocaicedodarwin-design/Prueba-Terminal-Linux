@@ -1,0 +1,41 @@
+BITÁCORA DE PROCESOS Y TELEGRAM - CLASE 38
+
+Nombre:
+Fecha:
+Entorno: GitHub Codespaces
+
+1. ¿Qué es un proceso?
+Respuesta:
+
+2. ¿Qué significa que un proceso esté corriendo?
+Respuesta:
+
+3. ¿Qué puede pasar si un proceso se detiene?
+Respuesta:
+
+4. ¿Qué comandos usé para observar procesos?
+Respuesta:
+
+5. ¿Qué es un bot de Telegram?
+Respuesta:
+
+6. ¿Qué es un token?
+Respuesta:
+
+7. ¿Por qué el token no debe publicarse?
+Respuesta:
+
+8. ¿Dónde se guardó el token?
+Respuesta:
+
+9. ¿Por qué .env debe estar en .gitignore?
+Respuesta:
+
+10. ¿Qué diferencia hay entre telegram-test.js y bot-observacion.js?
+Respuesta:
+
+11. ¿Cómo puede servir Telegram a una comunidad digital?
+Respuesta:
+
+12. ¿Qué información no debería enviarse por un bot sin protocolo?
+Respuesta:
