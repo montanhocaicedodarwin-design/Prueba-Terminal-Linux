@@ -16,7 +16,7 @@ async function enviarMensaje() {
   try {
     await bot.sendMessage(
       chatId,
-      "Clase 38: prueba inicial de Telegram desde Node.js realizada correctamente."
+      "hola a todos."
     );
 
     console.log("Mensaje enviado correctamente a Telegram.");
