@@ -1,0 +1,45 @@
+BITÁCORA OPERATIVA - CLASE 39
+Logs, Git e IA responsable
+
+Nombre: Darwin Montaño Caicedo
+Fecha: 2026-06-11
+Entorno: GitHub Codespaces
+
+1. ¿Qué es un log?
+Respuesta: Un log es un registro de eventos y mensajes que genera una aplicación para documentar su ejecución.
+
+2. ¿Por qué un log ayuda a diagnosticar?
+Respuesta: Porque muestra el orden de los eventos y los errores ocurridos, lo que permite encontrar la causa de fallos y verificar el comportamiento.
+
+3. ¿Qué diferencia hay entre INFO, WARN y ERROR?
+Respuesta: INFO son mensajes informativos normales, WARN son advertencias de posibles problemas y ERROR son fallos que requieren corrección.
+
+4. ¿Qué log observé en la práctica?
+Respuesta: Observé un `INFO` de inicio, un `WARN` de práctica y un `ERROR` cuando faltaba `TELEGRAM_BOT_TOKEN` o `TELEGRAM_CHAT_ID`.
+
+5. ¿Qué significa el error observado?
+Respuesta: Significa que no se encontró una variable de entorno necesaria para la integración con Telegram y el programa no puede continuar.
+
+6. ¿Qué información sensible no debo compartir en logs?
+Respuesta: No debo compartir tokens, claves, contraseñas, datos personales ni identificadores privados como `TELEGRAM_BOT_TOKEN` o `TELEGRAM_CHAT_ID`.
+
+7. ¿Qué comando de Git usé para revisar cambios?
+Respuesta: Usé `git status` para revisar el estado y los cambios en el repositorio.
+
+8. ¿Qué mensaje de commit usé?
+Respuesta: Usé un mensaje claro, por ejemplo: `Agrega bitácora de clase 39 y responde preguntas de logs, Git e IA`.
+
+9. ¿Qué consulta segura hice a IA?
+Respuesta: Consulté a la IA  cuáles son los conceptos clave de logs, Git y uso seguro de IA.
+
+10. ¿Qué información oculté antes de consultar a IA?
+Respuesta: Oculté el token de Telegram y el chat ID.
+
+11. ¿Qué respondió la IA?
+Respuesta: La IA respondió con explicaciones sobre qué son los logs, cómo ayudan a diagnosticar, la diferencia entre niveles de log, y recomendaciones de seguridad y trazabilidad.
+
+12. ¿Cómo validé la respuesta?
+Respuesta: Validé comparando con los ejemplos de `logs-demo.js` y `telegram-log-demo.js`, y asegurándome de que las descripciones coincidieran con la práctica.
+
+13. ¿Qué aprendí sobre trazabilidad?
+Respuesta: Aprendí que Git registra quién hizo qué cambio y cuándo, y que esto es clave para seguir el historial y mantener responsabilidad en el desarrollo.
