@@ -1,0 +1,56 @@
+REFLEXIÓN TÉCNICA INICIAL SOBRE TELEGRAM COMO CANAL COMUNITARIO
+Clase 40 - Semana 8
+
+Nombre: Darwin Montaño Caicedo
+Fecha:11/06/2026
+
+1. ¿Cómo podría servir Telegram a una comunidad digital?
+Respuesta: Telegram sería ideal como centro de distribución de información en tiempo real para 
+proyectos colaborativos. Podría conectar a miembros dispersos geográficamente, permitir avisos 
+instantáneos sobre cambios de código, entregas de sprints, fallos en sistemas y documentación
+ actualizada, todo sin recargar bandejas de entrada de correo.
+
+2. ¿Qué mensajes o alertas sería útil enviar por Telegram?
+Respuesta: Recordatorios de reuniones de equipo, reportes diarios de estado de servicios, confirmaciones 
+de tareas completadas, y avisos de actividades inusuales en producción que requieran atención inmediata.
+
+3. ¿Qué reportes no sensibles podrían automatizarse?
+Respuesta: Resúmenes diarios de commits por desarrollador, conteos de issues cerradas vs abiertas, 
+estadísticas de disponibilidad del servidor, uso de recursos por semana, cambios de documentación 
+versionada, y listados públicos de features completadas. Información que agrega valor sin exponer 
+detalles de seguridad.
+
+4. ¿Qué información no debería enviarse por Telegram sin protocolo?
+Respuesta: Contraseñas, tokens de acceso, claves API, credenciales de bases de datos, direcciones IP 
+internas de sistemas críticos, registros de auditoria privados, información de usuarios finales, y 
+detalles de vulnerabilidades no publicadas. Nada que pueda ser interceptado y usado para atacar sistemas.
+
+5. ¿Qué tareas conviene dejar en Node.js?
+Respuesta: Lógica de negocio compleja que requiere procesamiento intensivo, cálculos en tiempo real, 
+manejo de conexiones persistentes a bases de datos, y acciones que deben ejecutarse bajo demanda con 
+control preciso. Node.js es mejor cuando necesito flexibilidad de código personalizado.
+
+6. ¿Qué tareas conviene automatizar con n8n?
+Respuesta: Flujos repetitivos y sin lógica compleja: sincronizar datos entre sistemas, llamar APIs en 
+secuencia, formatear mensajes Telegram basados en eventos, integrar sin escribir código, crear notificaciones 
+basadas en condiciones simples, y automatizar tareas administrativas donde n8n proporciona interfaz visual.
+
+7. ¿Qué credenciales deben protegerse?
+Respuesta: Token del bot de Telegram, credenciales de base de datos, claves privadas SSH, tokens de GitHub, 
+contraseñas de servicios externos, claves de APIs terceras, y cualquier secreto que permita acceso a recursos. 
+Absolutamente todo debe estar en variables de entorno, nunca hardcodeado.
+
+8. ¿Por qué el token del bot no debe estar en GitHub?
+Respuesta: Porque cualquier persona que ceda acceso al repositorio —incluso repositorios privados con muchos
+ colaboradores— podría obtener el token y usarlo para impersonar el bot. Además, si el repositorio se vuelve 
+ público accidentalmente, el token queda expuesto permanentemente. Una vez en GitHub, asumir que está comprometido.
+
+9. ¿Qué medidas de seguridad deben aplicarse antes de una integración real?
+Respuesta: Validar todas las entradas para evitar inyección, usar archivos .env protegidos con permisos 600, 
+implementar límites de rate en el bot, usar HTTPS para webhooks, mantener logs sin información sensible, 
+rotación periódica de tokens, y probar con tokens de desarrollo antes de usar credenciales reales.
+
+10. ¿Qué pregunta técnica me queda para la siguiente semana?
+Respuesta: ¿Cómo implementar un sistema de ciframiento end-to-end para datos sensibles que fluyen entre 
+Node.js y Telegram, manteniendo trazabilidad sin exponer llaves de descifrado, y qué trade-offs hay entre 
+seguridad, performance y mantenibilidad en casos de producción real con miles de usuarios?
